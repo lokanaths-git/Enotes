@@ -11,6 +11,5 @@
 <body>
 <%@include file="allComponent/navbar.jsp" %>
 
-<h1>Hello World</h1>
 </body>
 </html>
