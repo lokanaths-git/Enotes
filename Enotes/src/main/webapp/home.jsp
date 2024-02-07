@@ -10,6 +10,6 @@
 </head>
 <body>
 <%@include file="allComponent/navbar.jsp" %>
-
+<div><h1>Hello World</h1></div>
 </body>
 </html>
