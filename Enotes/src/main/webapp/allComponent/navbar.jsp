@@ -1,3 +1,4 @@
+<%@page import="com.enote.User.UserDetails"%>
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom navbar-custom">
   <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i>Enotes</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +17,17 @@
         <a class="nav-link" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i>Show Notes</a>
       </li>
     </ul>
-       <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit" href="index.jsp"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Logout</a>
+    
+    <%
+       UserDetails user=(UserDetails)session.getAttribute("userData");
+        if(user!=null){
+    %>
+      <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit" href="index.jsp"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Profile</a>
+      <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit" href="index.jsp"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Logout</a>
+     <%} 
+    %>
+    
+       <!-- <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit" href="index.jsp"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Logout</a> -->
 <!--       <a class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>
  -->    
   </div>

@@ -39,9 +39,9 @@ public class UserDao {
 		
 	}
 	
-	public boolean loginuser(UserDetails user) {
+	public UserDetails loginuser(UserDetails user) {
 		
-		boolean result=false;
+		UserDetails user1=null;
 		
 		try {
 			
@@ -53,7 +53,10 @@ public class UserDao {
 			ResultSet rs=ps.executeQuery();
 			
 			if(rs.next()) {
-				result=true;
+				user1 = new UserDetails();
+				user1.setName(rs.getString("name"));
+				user1.setEmail(rs.getString("email"));
+				user1.setPassword("password");
 			}
 			
 			
@@ -62,7 +65,7 @@ public class UserDao {
 		}
 		
 		
-		return result;
+		return user1;
 		
 	}
 	
