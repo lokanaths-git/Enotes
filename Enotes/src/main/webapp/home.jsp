@@ -8,8 +8,17 @@
 <link rel="stylesheet" href="styles/style.css">
 <title>Home</title>
 </head>
-<body>
 <%@include file="allComponent/navbar.jsp" %>
-<div><h1>Hello World</h1></div>
+<body>
+
+<div class="container-fluid p-0">
+
+  <div class="card">
+    <div class="card-body" style="margin-left: 40%">
+       <img alt="" src="allComponent/image/write2.png" class="img-fluid mx-auto" style="max-width: 350px;">
+       <h1 style="color: blue;margin-left: -15%;">START TAKING YOUR NOTES</h1>
+    </div>
+  </div>
+</div>
 </body>
 </html>
