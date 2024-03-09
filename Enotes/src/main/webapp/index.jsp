@@ -110,7 +110,7 @@ header {
 <%-- <%@include file="allComponent/navbar.jsp" %>
  --%>
  <header>
-    <h1>E-Note Management System</h1>
+    <h1>E-Note Tracker System</h1>
   </header>
  <div style="display: flex;justify-content: space-evenly;">
 <div class="container-fluid back-img">

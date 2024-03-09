@@ -17,6 +17,7 @@
     <div class="card-body" style="margin-left: 40%">
        <img alt="" src="allComponent/image/write2.png" class="img-fluid mx-auto" style="max-width: 350px;">
        <h1 style="color: blue;margin-left: -15%;">START TAKING YOUR NOTES</h1>
+        <a href="addnote.jsp"><button type="button" class="btn btn-primary" style="margin-left: 9%">Add Note</button></a>
     </div>
   </div>
 </div>
