@@ -10,6 +10,6 @@
 </head>
 <%@include file="allComponent/navbar.jsp" %>
 <body>
-<h1>Add Note</h1>
+<h1>Add Your Note</h1>
 </body>
 </html>
