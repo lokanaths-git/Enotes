@@ -10,6 +10,7 @@
 </head>
 <%@include file="allComponent/navbar.jsp" %>
 <body>
+<h1 class="text-center">ADD YOUR NOTES</h1>
 <div class="container mt-5">
 <div class="row">
 <div class="col-md-12">
@@ -23,12 +24,13 @@
    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
    placeholder="Enter Description" style="height: 150px">
   </div>
+  <div class="container text-center">
   <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </form>
 </div>
 </div>
 </div>
 </body>
-</div>
 </body>
 </html>
