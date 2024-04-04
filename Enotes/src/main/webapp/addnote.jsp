@@ -14,18 +14,23 @@
 <div class="container mt-5">
 <div class="row">
 <div class="col-md-12">
-<form>
+<form action="AddNoteServlet" method="post">
+    <%
+       UserDetails us=(UserDetails)session.getAttribute("userData");
+    %>
   <div class="form-group">
     <label for="exampleInputEmail1">Note Title</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Note">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Note"
+    name="title" required="required">
   </div>
   <div class="form-group">
    <label for="exampleInputEmail1">Note Description</label>
    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
-   placeholder="Enter Description" style="height: 150px">
+   placeholder="Enter Description" style="height: 150px" name="content" required="required">
   </div>
   <div class="container text-center">
   <button type="submit" class="btn btn-primary">Submit</button>
+  <input type="text" name="uId" value="<%=us.getId()%>">
   </div>
 </form>
 </div>
