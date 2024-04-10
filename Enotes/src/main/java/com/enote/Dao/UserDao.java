@@ -45,7 +45,7 @@ public class UserDao {
 		
 		try {
 			
-			String query = "SELECT name,email,password FROM user WHERE email=? AND password=? ";
+			String query = "SELECT id,name,email,password FROM user WHERE email=? AND password=? ";
 			
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1, user.getEmail());
@@ -54,6 +54,7 @@ public class UserDao {
 			
 			if(rs.next()) {
 				user1 = new UserDetails();
+				user1.setId(rs.getInt(1));
 				user1.setName(rs.getString("name"));
 				user1.setEmail(rs.getString("email"));
 				user1.setPassword("password");
